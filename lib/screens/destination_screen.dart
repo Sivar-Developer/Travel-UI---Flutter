@@ -19,6 +19,10 @@ class _DestinationScreenState extends State<DestinationScreen> {
 
   Text _buildRatingStars(int rating) {
     String stars = '';
+    for(int i = 0; i < rating; i++) {
+      stars += '⭐️ ';
+    }
+    return Text(stars);
   }
 
   @override
@@ -161,7 +165,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                               ],
                             ),
                             Text(activity.type, style: TextStyle(color: Colors.grey),),
-                            // _buildRatingStars(activity.rating),
+                            _buildRatingStars(activity.rating),
                             SizedBox(height: 10.0),
                             Row(
                               children: [
