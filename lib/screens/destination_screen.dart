@@ -170,6 +170,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                             Row(
                               children: [
                                 Container(
+                                  padding: EdgeInsets.all(4.0),
                                   width: 70.0,
                                   decoration: BoxDecoration(
                                     color: Theme.of(context).accentColor,
@@ -180,6 +181,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                 ),
                                 SizedBox(width: 10.0,),
                                 Container(
+                                  padding: EdgeInsets.all(4.0),
                                   width: 70.0,
                                   decoration: BoxDecoration(
                                     color: Theme.of(context).accentColor,
@@ -191,6 +193,19 @@ class _DestinationScreenState extends State<DestinationScreen> {
                               ],
                             )
                           ],
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 20.0,
+                      top: 20.0,
+                      bottom: 20.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0 ),
+                        child: Image(
+                          width: 100.0,
+                          image: AssetImage(activity.imageUrl),
+                          fit: BoxFit.cover,
                         ),
                       ),
                     )
