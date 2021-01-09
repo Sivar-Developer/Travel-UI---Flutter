@@ -64,8 +64,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 .map((MapEntry map) => _buildIcon(map.key))
                 .toList()
             ),
-            SizedBox(height: 20.0,),
-            DestinationCarousel()
+            SizedBox(height: 20.0),
+            DestinationCarousel(),
+            SizedBox(height: 20.0),
+            HotelCarousel()
           ],
         ),
       ),
